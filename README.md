@@ -20,8 +20,7 @@ A key innovation of this project is the creation of a hybrid feature set that pr
 These two feature sets are then combined into a single feature matrix, giving the model both high-level statistical information and low-level textual patterns to learn from.
 
 ### 3. Handling Class Imbalance
-Log data is naturally highly imbalanced, with anomalies being very rare. To address this, we employ a two-pronged strategy:
-* **SMOTE (Synthetic Minority Over-sampling Technique):** We use SMOTE exclusively on the training data to create synthetic examples of the anomaly class. This gives the model a more balanced dataset to learn from without introducing data leakage into the test set.
+Log data is naturally highly imbalanced, with anomalies being very rare. 
 * **Model-Level Weighting:** The XGBoost classifier is configured with the `scale_pos_weight` parameter, which internally gives more importance to the minority (anomaly) class during training.
 
 ### 4. Model Training and Hyperparameter Tuning
