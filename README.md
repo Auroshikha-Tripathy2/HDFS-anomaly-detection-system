@@ -1,4 +1,4 @@
-# High-Precision Anomaly Detection in HDFS Logs
+# HDFS Anomaly Detection in HDFS Logs
 
 This project presents a complete machine learning pipeline for detecting anomalies in Hadoop Distributed File System (HDFS) logs with exceptionally high accuracy and precision. The model is designed to identify operational failures or potential security threats from log data, a critical task in managing large-scale data systems.
 
