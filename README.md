@@ -31,8 +31,8 @@ We use an **XGBoost Classifier**, a state-of-the-art gradient boosting algorithm
 
 The final, tuned model demonstrates state-of-the-art performance on the hold-out test set. The key metrics confirm its effectiveness:
 
-| Metric | Score |
-| :--- | :--- |
+| Metric        | Score  |
+| :------------ | :----- |
 | **Accuracy** | 0.9998 |
 | **F1 Score** | 0.9961 |
 | **ROC AUC** | 1.0000 |
@@ -43,17 +43,17 @@ The plots below provide a visual summary of the model's exceptional performance.
 ### Performance Curves
 The ROC and Precision-Recall curves both show an Area Under the Curve (AUC) of 1.000, which signifies a near-perfect ability to distinguish between normal and anomalous logs.
 
-![Performance Curves](output.png)
+![Performance Curves](image_7118ad.png)
 
 ### Confusion Matrix
 The confusion matrix shows that the model is both highly precise and has excellent recall, with only 17 false positives and 4 false negatives on a test set of over 92,000 events.
 
-![Confusion Matrix](confusion%20matrix.png)
+![Confusion Matrix](image_7118c9.png)
 
 ### Feature Importance
 The feature importance plot highlights the top 20 tokens and numerical features that were most predictive of an anomaly. This shows that the model learned to identify specific, meaningful patterns in the log data.
 
-![Feature Importance](feature_importance.png)
+![Feature Importance](image_7118e8.png)
 
 ## How to Use This Project
 
